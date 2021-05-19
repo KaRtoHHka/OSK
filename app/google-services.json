@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "461444812535",
+    "firebase_url": "https://oskfin-3f07c.firebaseio.com",
+    "project_id": "oskfin-3f07c",
+    "storage_bucket": "oskfin-3f07c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461444812535:android:c8e570c615fdc531070df2",
+        "android_client_info": {
+          "package_name": "com.oleg.oskfin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461444812535-n02ssvb1uegcksjn0k830uveskhdstl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oleg.oskfin",
+            "certificate_hash": "e0934751aa99044ba1b352559a3ecbdeacbcbade"
+          }
+        },
+        {
+          "client_id": "461444812535-3ue5ol22t8ci7i83hh1ee6ms6en728hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdVPDjvt2BYPd3yHK5tvfD2qkJFI5_3x8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461444812535-3ue5ol22t8ci7i83hh1ee6ms6en728hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

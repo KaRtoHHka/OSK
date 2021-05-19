@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".ui.admin.AdminUsersFragment">
+
+    <TextView
+        style="@style/MainText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/administration" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+            android:id="@+id/adminPhone"
+            style="@style/SecondTextEdit"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:hint="@string/format_7"
+            android:inputType="phone"
+            android:text="@string/_8"
+            app:met_floatingLabel="highlight" />
+
+        <Button
+            android:id="@+id/find_button"
+            style="@style/MyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="@string/find" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/admin_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:divider="@color/common_google_signin_btn_text_light"
+        android:dividerHeight="12dp" />
+
+</LinearLayout>

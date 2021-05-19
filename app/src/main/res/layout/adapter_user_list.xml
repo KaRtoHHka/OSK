@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userListRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:focusable="auto">
+
+    <TextView
+        android:id="@+id/userListName"
+        style="@style/SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/userListSurname"
+        style="@style/SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userListName"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/userListOnLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userListName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/userListName"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_action_online" />
+
+    <TextView
+        android:id="@+id/userListMoneyValue"
+        style="@style/SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/userListPhone"
+        style="@style/SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userListSurname"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+
+</RelativeLayout>

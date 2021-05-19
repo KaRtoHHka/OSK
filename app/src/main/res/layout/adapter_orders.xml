@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/itemRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            style="@style/SecondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item" />
+
+        <TextView
+            android:id="@+id/adapterOrderItem"
+            style="@style/SecondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pointRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemRelative"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            style="@style/SecondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/point" />
+
+        <TextView
+            android:id="@+id/adapterOrderPoint"
+            style="@style/SecondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/adapterOrderTime"
+        style="@style/SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pointRelative"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="16sp" />
+</RelativeLayout>

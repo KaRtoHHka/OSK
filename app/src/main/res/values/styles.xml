@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MainText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/furore</item>
+        <item name="android:textColor">@color/text_light_color</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="SecondText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/play</item>
+        <item name="android:textColor">@color/text_light_color</item>
+        <!--        <item name="android:layout_margin">16dp</item>-->
+    </style>
+
+    <style name="MyButton" parent="SecondText">
+        <item name="android:background">#102211</item>
+
+    </style>
+
+    <style name="SecondTextEdit">
+        <item name="android:textSize">20sp</item>
+        <item name="met_textColor">@color/text_light_color</item>
+        <item name="met_textColorHint">@color/text_light_color</item>
+        <item name="met_baseColor">@color/text_light_color</item>
+        <item name="android:fontFamily">@font/play</item>
+
+    </style>
+
+    <!--    <style name="SecenEdit" parent="SecondText">-->
+    <!--        <item name="app:met_floatingLabel">highlight</item>-->
+    <!--    </style>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

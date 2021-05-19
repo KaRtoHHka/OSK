@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/MainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/fill_in_all_fields_with" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/SecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+                android:id="@+id/editName"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="highlight"
+
+                app:met_helperTextColor="#FFFFFF"
+                app:met_textColorHint="@color/text_light_color"
+                app:met_underlineColor="#FFFFFF" />
+
+            <TextView
+                style="@style/SecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/surname" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+                android:id="@+id/editSurname"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_textColorHint="@color/text_light_color"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+
+                app:met_floatingLabel="highlight" />
+
+            <TextView
+                style="@style/SecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+                android:id="@+id/editPhoneNumber"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/format_7"
+                android:inputType="number"
+
+                android:text="@string/_8"
+                app:met_floatingLabel="highlight"
+                app:met_textColorHint="@color/text_light_color" />
+
+            <TextView
+                style="@style/SecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+                android:id="@+id/editMail"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:met_textColorHint="@color/text_light_color"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+
+                app:met_floatingLabel="highlight" />
+
+            <TextView
+                style="@style/SecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+                android:id="@+id/editPassword"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                app:met_textColorHint="@color/text_light_color"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+
+                app:met_floatingLabel="highlight" />
+
+            <TextView
+                style="@style/SecondText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/repeat_the_password" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+                android:id="@+id/editPasswordCheck"
+                style="@style/SecondTextEdit"
+                app:met_textColorHint="@color/text_light_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/repeat_the_password"
+                android:inputType="textPassword"
+
+                app:met_floatingLabel="highlight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    style="@style/MyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:onClick="cancel"
+                    android:text="@string/cancel_button" />
+
+                <Button
+                    android:id="@+id/sign_up_button"
+                    style="@style/MyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:onClick="signUpAdd"
+                    android:text="@string/sign_up_button" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MainText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/menu_profile" />
+
+        <Button
+            android:id="@+id/profile_remove_button"
+            style="@style/MyButton"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/delete_profile" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/profEditName"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="#FFFFFF"
+
+                app:met_textColorHint="@color/text_light_color" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/profEditSurname"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="#FFFFFF"
+
+                app:met_textColorHint="@color/text_light_color" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/profEditMiddleName"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/middle_name"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="#FFFFFF"
+
+                app:met_textColorHint="@color/text_light_color" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/profEditPhoneNumber"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/format_7"
+                android:inputType="phone"
+                android:text="@string/_8"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="#FFFFFF" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/profEditMail"
+                style="@style/SecondTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="#FFFFFF"
+
+                app:met_textColorHint="@color/text_light_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/profEditPassword"
+                    style="@style/SecondTextEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHint="#000000"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="#FFFFFF"
+
+                    app:met_textColorHint="@color/text_light_color" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/profEditPasswordCheck"
+                    style="@style/SecondTextEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/repeat_the_password"
+                    android:inputType="textPassword"
+                    android:textColorHint="#000000"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextColor="#FFFFFF"
+
+                    app:met_textColorHint="@color/text_light_color" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        style="@style/MyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</LinearLayout>

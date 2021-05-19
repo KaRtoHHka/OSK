@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MainText"
+        android:text="@string/points" />
+
+    <ListView
+        android:id="@+id/admin_points_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:divider="@color/common_google_signin_btn_text_light"
+        android:dividerHeight="12dp" />
+
+    <Button
+        android:id="@+id/add_point_button"
+        style="@style/MyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:text="@string/add_point" />
+</LinearLayout>

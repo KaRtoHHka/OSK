@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@color/dialog_background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/admin_set_name"
+        style="@style/MainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/admin_set_phone"
+        style="@style/SecondText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="16dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+app:met_floatingLabelTextColor="#FFFFFF"
+        android:id="@+id/admin_set_money"
+        style="@style/SecondTextEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/money"
+        android:inputType="number"
+        app:met_floatingLabel="highlight"
+        app:met_textColorHint="@color/text_light_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SecondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/in_game" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/admin_set_in_game"
+            style="@style/SecondTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SecondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/admin" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/admin_set_admin"
+            style="@style/SecondTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SecondText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sender" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/admin_set_sender"
+            style="@style/SecondTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/admin_set_cancel_button"
+            style="@style/MyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:text="@string/cancel_button" />
+
+        <Button
+            android:id="@+id/admin_set_save_button"
+            style="@style/MyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</LinearLayout>

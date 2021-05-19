@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_background_color"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/MainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_a_delivery_point" />
+
+    <ListView
+        android:id="@+id/pointList"
+        style="@style/SecondText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
