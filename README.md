@@ -1,1 +1,1 @@
-# OSKFin
+# OSK
